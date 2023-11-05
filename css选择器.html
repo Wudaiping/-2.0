@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8/">
+<title>CSS详细介绍我的老公</title>
+<style type="text/css">
+
+/*标签选择器*/
+body{
+    font-size:20px; font-family:"微软正黑体"
+}
+h3{
+    font-size:20px; text-decoration:underline;
+}
+
+/*class 选择器*/
+div.content{
+    padding:10px; border:1px dashed pink;
+}
+
+/*id 选择器*/
+#btn{
+    border:1px solid gray;
+    background-color: aquamarine; padding:5px;
+}
+
+/*虚拟选择器：搭配其他选择器使用 */
+/* :hover 虚拟选择器：滑鼠移到目标时，会显示紫色*/
+#btn:hover{
+    background-color: blueviolet;
+}
+/* :focus 虚拟选择器：滑鼠移到目标时，框框会显示brown*/
+input:focus{
+    border:2px solid pink ;
+}
+
+/*阶层式选择器*/
+a{
+    color:rgb(253, 85, 113) ;
+}
+
+
+</style>    
+</head>
+
+<body>
+    <h3>我的老公</h3>
+    <div class="content"> 大家好，我给大家介绍一下我的老公 </div>
+
+    <h3>我老公最爱的网页</h3>
+    <ul class="content">
+        <li><a href="https://www.facebook.com/profile.php?id=100005740691410">她老婆的脸书</a></li>
+        <li><a href="https://www.instagram.com/song_souy_ping/">她老婆的IG</a></li>
+    </ul>
+
+    <h3>我老公最骄傲的事情</h3>
+    <ul class="content">1. 娶了呆呆> </ul>
+    <ul class="content">2. 跟呆呆有了肉肉> </ul>
+    <ul class="content">3. 让呆呆过上了幸福的生活> </ul>
+
+    <h3>与呆呆联络: </h3>
+    <div class="content">
+        填写你要跟呆呆说的话<input type="text"/> <button id="btn">发送</button>
+    </div>
+
+</body>
+</html>
+
